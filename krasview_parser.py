@@ -4,11 +4,10 @@ import csv
 import re
 import datetime
 import requests
-from collections import Counter
 import numpy as np
 
 from bs4 import BeautifulSoup
-from lxml.html.defs import empty_tags
+
 # 1) БЛОК КОДА 1.  ФОРМИРУЕТСЯ ЦИКЛ ЗАПОЛНЕНИЯ ХРАНИЛИЩА  НОВЫХ ФИЛЬМОВ С  1 по 10
 
 class krasview_parser:
@@ -230,9 +229,9 @@ class krasview_parser:
                 #     exit()
                 # print(slovar_filmov_csv)
                 ## Перегоняем скрипт в  джейсон
-        # print(slovar_movie)
-        # json_format = json.dumps(slovar_movie, indent=4,ensure_ascii=False)
-        # print(json_format)
+        print(slovar_movie)
+        json_format = json.dumps(slovar_movie, indent=4,ensure_ascii=False)
+        print(json_format)
                 ################ СПРАВКА ДЛЯ СЕБЯ
 
         ## создать джейсон файл
